@@ -17,6 +17,5 @@ if st.button('Submit'):
         image_bytes = drw.get_imagedata('svg')
 
     st.image('temp.svg')
-    st.image(image_bytes)
 
     st.download_button(label='Download data as SVG', data=image_bytes, file_name='MyCircuit.svg')
